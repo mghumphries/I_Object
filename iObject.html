@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Object - MaKayla Humphries</title>
+</head>
+<body>
+    <script>
+        const robot = {
+            name: "iRobot",
+            manufacturer: "Toyota",
+            skillset: {
+
+                skillset1: "cooking",
+                skillset2: "texting",
+                skillset3: "driving"
+            },
+        checkingSkill: function(skillset){
+            let skillset1 = prompt("Enter the skillset that you want to check: ")
+            if (skillset1 == this["skillset"]["skillset1"]){
+                alert(`Yes, the robot has ${skillset1} skill!`)
+                return true;
+            }
+            else if (skillset1 == this["skillset"]["skillset2"]){
+                alert(`Yes, the robot has ${skillset1} skill!`)
+                return true;
+            }
+            else if (skillset1 == this["skillset"]["skillset3"]){
+                return true;
+            }   
+            else
+            alert(`No! The robot don't have ${skillset1} skill`)
+            return false;
+
+        }
+    }
+let checking = robot.checkingSkill() 
+console.log(checking)
+    </script>
+    
+</body>
+</html>
